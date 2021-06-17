@@ -46,6 +46,42 @@
     document.write(palindromeCheck("oioo"))
   </script>
 
+  <h2>Exo 2: Traveling snails</h2>
+  <p>Un groupe de N escargots participe à un concours en escaladant chacun
+    un nombre de pôles donné.
+    La hauteur de ces pôles et la vitesse de chaque escargot sont différentes.
+    À la base de chaque pôle, chaque escargot est prêt à commencer le
+    concours.
+    Chaque escargot est codé avec le nombre du pôle qu’il doit escalader.
+    Chaque escargot i escalade daySpeed (i) mètres pendant la journée et
+    descend nightSpeed (i) mètres pendant la nuit (daySpeed (i) > nightSpeed
+    (i)).
+    Affichez l’ordre dans lequel les escargots atteignent le sommet des
+    pôles. <br> <br>
+    Travelling Snails <br> <br>
+    Rappelez-vous que :
+    <br>
+    - si 2 ou plusieurs escargots arrivent en même temps pendant le
+    dernier jour, ils doivent être ordonnés par leur index.
+    <br>
+    - si un escargot atteint le sommet du pôle pendant
+    la journée, il termine la course.
+    <br> <br>
+    Input : N, tableau avec hauteurs = heights[N], tableau avec des mètres
+    ascendants = daySpeed [N] et des mètres descendants = nightSpeed [N].
+    <br>
+    Output : tableau avec l’ordre dans lequel les escargots atteignent le
+    sommet des pôles.
+    <br>
+    Exemple :
+    Pour N = 7, heights = [10,5,8,3,25,7,9], daySpeed = [2,3,2,4,5,3,2], nightSpeed
+    = [1,2,1,3,1,2,0], la sortie est [4,2,6,7,5,3,1].</p>
+  <br>
+  <h3>Réponse:</h3>
+  <script>
+    document.write(travelingSnails(7))
+  </script>
+
 </body>
 
 </html>
